@@ -5,7 +5,6 @@ require 'json'
 require 'digest/md5'
 require 'httparty'
 
-
 class ANX
 	include HTTParty
 	base_uri 'https://anxpro.com/api/2'
@@ -21,9 +20,9 @@ class ANX
 		@currency
 	end
 
-
 	def method_missing(method_sym, *arguments, &block)
 		convert_undercores_to_slashes = method_sym.to_s.gsub('_','/')
+		convert_undercores_to_slashes = convert_undercores_to_slashes.to_s.gsub('sendsimple','send_simple') # An exception where theres an underscore
 		convert_undercores_to_slashes = convert_undercores_to_slashes.gsub('currencypair', "BTC#{@currency}")
 		if arguments.length == 1 then
 			if arguments[0].kind_of? Hash
