@@ -1,4 +1,6 @@
-# ANXBTC
+# nl-anx
+[![Gem Version](https://badge.fury.io/rb/nl-anx.svg)](https://badge.fury.io/rb/nl-anx)
+
 ## About
 ANXBTC is a Ruby Library for interfacing with the ANXBTC.com API.
 
