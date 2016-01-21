@@ -1,0 +1,4 @@
+# This file should be renamed environment.rb
+ENV['anx_access_key'] = 'accesskey'
+ENV['anx_access_secret'] = 'access secret'
+ENV['anx_currency'] = 'HKD'

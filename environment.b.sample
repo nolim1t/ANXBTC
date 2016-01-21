@@ -1,4 +1,0 @@
-# This file should be renamed environment.rb
-ENV['access_key'] = 'accesskey'
-ENV['access_secret'] = 'access secret'
-ENV['currency'] = 'AUD'
