@@ -11,7 +11,13 @@ This class lets you do market queries and trading (if you allow it from the cont
 ## Usage:
 This will change
 
-* Install httparty gem
-* Set up ANXBTC gem
-* In the file that you wish to use this add in **require 'ANXBTC'**
-* In the copy **environment.rb.sample** to **environment.rb** or you can just set the environment variables up (Aiming to not use environment variables at all)
+* gem install httparty
+* gem install nl-anx
+* Set up environment variables
+
+## Example code
+```ruby
+require "nl-anx"
+a = ANX.new
+puts a.BTCHKD_money_depth_full
+```
