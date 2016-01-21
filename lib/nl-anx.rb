@@ -10,9 +10,9 @@ class ANX
 	base_uri 'https://anxpro.com/api/2'
 
 	def initialize(options={})
-		@apisecret = Base64.decode64(ENV['access_secret'])
-		@apikey = ENV['access_key']
-		@currency = ENV['currency']
+		@apisecret = Base64.decode64(ENV['anx_access_secret'])
+		@apikey = ENV['anx_access_key']
+		@currency = ENV['anx_currency']
 		@values = 'nonce=' + (Time.now.to_f * 1000).to_i.to_s
 	end
 
